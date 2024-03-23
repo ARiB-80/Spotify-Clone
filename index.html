@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Spotify Clone</title>
+    <link rel="icon" href="svgs/spotify-logo.svg" type="image/icon type">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left-bar">
+            <div class="left-top">
+                <div class="action-container">
+                    <div class="logo-cross-container">
+                        <div class="spotify-logo-container">
+                            <img src="svgs/spotify-logo.svg" alt="spotify-logo" class="spotify-logo">
+                            <h2>Spotify</h2>
+                        </div>
+                        <button class="cross">
+                            <img src="svgs/cross.svg" alt="cross">
+                        </button>
+                    </div>
+                    <div class="action">
+                        <img class="icon" src="svgs/home.svg" alt="home">
+                        <h4>Home</h4>
+                    </div>
+                    <div class="action">
+                        <img class="icon" src="svgs/search.svg" alt="search">
+                        <h4>Search</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="left-bottom">
+                <div class="lib-heading-btn-container">
+                    <div class="library action">
+                        <img src="svgs/library.svg" alt="library" class="icon">
+                        <h4>Your Library</h4>
+                    </div>
+                    <div class="lib-btn-container">
+                        <button class="lib-btn"><img src="svgs/add.svg" alt="add"></button>
+                        <button class="lib-btn"><img src="svgs/show-more.svg" alt="showMore"></button>
+                    </div>
+                </div>
+                <div class="songs-list">
+                    <br>
+                    <span>Current Playlist : -</span>
+                    <ul>
+                        <!-- <a href="#"><li>sdadas</li></a> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right-bar">
+            <header>
+                <div class="navigation-btn-container">
+                    <button class="hamburger">
+                        <img src="svgs/hamburger.svg" alt="hamburger">
+                    </button>
+                    <button>
+                        <img src="svgs/back.svg" alt="back">
+                    </button>
+                    <button>
+                        <img src="svgs/forward.svg" alt="forward">
+                    </button>
+                </div>
+                <div class="signup-options">
+                    <button class="signup">Sign Up</button>
+                    <button class="login">Log In</button>
+                </div>
+            </header>
+            <div class="main-content-container">
+                <div class="playlist-container">
+                    <h1>Spotify Playlist</h1><br>
+                <div class="playlist-card-container">
+                    <div class="playlist-card" data-folder="Chaye%20%26%20Chill">
+                        <img class="card-play-btn" src="svgs/card-play.svg" alt="card-play-btn">
+                        <img class="playlist-img" src="songs/Chaye%20%26%20Chill/cover.png" alt="playlist-img">
+                        <div class="playlist-content">
+                            <h2>Chaye &amp; Chill</h2>
+                            <p class="text-trim-2">soundtrack your chaye time, picnic hangs, or just a cozy day in.</p>
+                        </div>
+                    </div>
+            <div class="playlist-card" data-folder="Dinner%20with%20Friends">
+                    <img class="card-play-btn" src="svgs/card-play.svg" alt="card-play-btn">
+                    <img class="playlist-img" src="songs/Dinner%20with%20Friends/cover.png" alt="playlist-img">
+                    <div class="playlist-content">
+                    <h2>Dinner with Friends</h2>
+                    <p class="text-trim-2">The perfect soundtrack to those long nights over dinner</p>
+                </div>
+            </div><div class="playlist-card" data-folder="Goosebumps">
+                <img class="card-play-btn" src="svgs/card-play.svg" alt="card-play-btn">
+                <img class="playlist-img" src="songs/Goosebumps/cover.png" alt="playlist-img">
+                <div class="playlist-content">
+                    <h2>Goosebumps</h2>
+                    <p class="text-trim-2">You up?</p>
+                </div>
+            </div><div class="playlist-card" data-folder="homework%20vibes">
+                <img class="card-play-btn" src="svgs/card-play.svg" alt="card-play-btn">
+                <img class="playlist-img" src="songs/homework%20vibes/cover.png" alt="playlist-img">
+                <div class="playlist-content">
+                    <h2>homework vibes</h2>
+                    <p class="text-trim-2">Some bops to take the pain of homework away.</p>
+                </div>
+            </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="play-bar">
+        <div class="current-song-info">
+            <p id="Currently-playing">Currently playing</p>
+            <p id="song-name">-</p>
+        </div>
+        <div class="play-pause-container">
+            <div class="song-controllers">
+                
+                <button class="prev-song">
+                    <img src="svgs/next.svg" alt="prev-song">
+                </button>
+                <button class="play-pasue">
+                <img src="svgs/card-play.svg" alt="play-pause">
+                </button>
+                <button class="next-song">
+                    <img src="svgs/next.svg" alt="next-song">
+                </button>
+            </div>
+            <div class="song-bar-container">
+                <p id="current-time">00:00</p>
+                <div class="song-duration-bar">
+                    <div class="duration-container">
+                        <div class="duration">
+                            <div class="duration-tracker"></div>
+                        </div>
+                    </div>
+                </div>
+                <p id="full-duration">00:00</p>
+            </div>
+        </div>
+        <div class="more-options">
+            <div class="shuffle-loop">
+
+                <button class="shuffle">
+                    <img src="svgs/shuffle-white.svg" alt="shuffle">
+                </button>
+                <button class="loop">
+                    <img src="svgs/loop-white.svg" alt="loop-song">
+                </button>
+            </div>
+
+            <div class="volume">
+                <button>
+                    <img src="svgs/volume.svg" alt="volume">
+                </button>
+                <div class="volume-bar">
+                    <input type="range">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
